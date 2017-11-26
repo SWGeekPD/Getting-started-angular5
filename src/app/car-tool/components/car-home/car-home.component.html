@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <th>make</th>
+      <th>model</th>
+      <th>year</th>
+      <th>color</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5" *ngIf= "cars.length===0">
+        No Data
+      </td>
+    </tr>
+    <tr *ngFor = "let car of cars">
+      <td>{{car.make}}</td>
+      <td>{{car.model}}</td>
+      <td>{{car.year}}</td>
+      <td>{{car.color}}</td>
+      <td>{{car.price}}</td>
+    </tr>
+  </tbody>
+</table>
